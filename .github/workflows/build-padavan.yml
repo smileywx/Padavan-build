@@ -102,26 +102,26 @@ jobs:
         # 以下选项是定义你需要的功能（y=集成,n=忽略），重新写入到.config文件。
         ####################################################################
         echo "CONFIG_FIRMWARE_INCLUDE_LANG_CN=y" >> configs/templates/$TNAME.config      #设置界面简体中文
-        echo "CONFIG_FIRMWARE_INCLUDE_QOS=n" >> configs/templates/$TNAME.config          #删除QOS
+        echo "CONFIG_FIRMWARE_INCLUDE_QOS=y" >> configs/templates/$TNAME.config          #删除QOS
         echo "CONFIG_FIRMWARE_INCLUDE_SMBD36=y" >> configs/templates/$TNAME.config       #使用SMBD36新版本
         echo "CONFIG_FIRMWARE_INCLUDE_DDNS_SSL=n" >> configs/templates/$TNAME.config     #删除DDNS_SSL
         echo "CONFIG_FIRMWARE_INCLUDE_HTTPS=n" >> configs/templates/$TNAME.config        #删除HTTPS
         echo "CONFIG_FIRMWARE_INCLUDE_OPENVPN=n" >> configs/templates/$TNAME.config      #删除OPENVPN
         echo "CONFIG_FIRMWARE_INCLUDE_FFMPEG_NEW=y" >> configs/templates/$TNAME.config   #使用FFMPEG新版本
-        echo "CONFIG_FIRMWARE_INCLUDE_XUPNPD=y" >> configs/templates/$TNAME.config       #删除用于IPTV的XUPNPD
-        echo "CONFIG_FIRMWARE_INCLUDE_DOGCOM=y" >> configs/templates/$TNAME.config       #删除用于Drcom的工具DOGCOM
-        echo "CONFIG_FIRMWARE_INCLUDE_SHADOWSOCKS=n" >> configs/templates/$TNAME.config  #删除SS plus+
+        echo "CONFIG_FIRMWARE_INCLUDE_XUPNPD=n" >> configs/templates/$TNAME.config       #删除用于IPTV的XUPNPD
+        echo "CONFIG_FIRMWARE_INCLUDE_DOGCOM=n" >> configs/templates/$TNAME.config       #删除用于Drcom的工具DOGCOM
+        echo "CONFIG_FIRMWARE_INCLUDE_SHADOWSOCKS=y" >> configs/templates/$TNAME.config  #删除SS plus+
         echo "CONFIG_FIRMWARE_INCLUDE_DNSFORWARDER=n" >> configs/templates/$TNAME.config #删除DNSFORWARDER
-        echo "CONFIG_FIRMWARE_INCLUDE_VLMCSD=n" >> configs/templates/$TNAME.config       #删除用于KMS的工具VLMCSD
+        echo "CONFIG_FIRMWARE_INCLUDE_VLMCSD=y" >> configs/templates/$TNAME.config       #删除用于KMS的工具VLMCSD
         echo "CONFIG_FIRMWARE_INCLUDE_TTYD=y" >> configs/templates/$TNAME.config         #删除网页终端模拟器TTYD
         echo "CONFIG_FIRMWARE_INCLUDE_NAPT66=n" >> configs/templates/$TNAME.config       #删除用于二级路由、教育网分发IPv6地址的NAPT66
         echo "CONFIG_FIRMWARE_INCLUDE_SRELAY=n" >> configs/templates/$TNAME.config       #删除SRELAY
         echo "CONFIG_FIRMWARE_INCLUDE_SOCAT=n" >> configs/templates/$TNAME.config        #删除工具SOCAT
         echo "CONFIG_FIRMWARE_INCLUDE_MTR=y" >> configs/templates/$TNAME.config          #删除工具MTR
-        echo "CONFIG_FIRMWARE_INCLUDE_IPERF3=y" >> configs/templates/$TNAME.config       #删除工具IPERF3
+        echo "CONFIG_FIRMWARE_INCLUDE_IPERF3=n" >> configs/templates/$TNAME.config       #删除工具IPERF3
         echo "CONFIG_FIRMWARE_INCLUDE_NANO=n" >> configs/templates/$TNAME.config         #删除工具NANO
         echo "CONFIG_FIRMWARE_INCLUDE_HTOP=n" >> configs/templates/$TNAME.config         #删除工具HTOP
-        echo "CONFIG_FIRMWARE_INCLUDE_LRZSZ=y" >> configs/templates/$TNAME.config        #删除工具LRZSZ
+        echo "CONFIG_FIRMWARE_INCLUDE_LRZSZ=n" >> configs/templates/$TNAME.config        #删除工具LRZSZ
         echo "CONFIG_FIRMWARE_INCLUDE_CURL=y" >> configs/templates/$TNAME.config         #删除工具CURL
         echo "CONFIG_FIRMWARE_INCLUDE_OPENSSH=y" >> configs/templates/$TNAME.config      #删除OPENSSH
         echo "CONFIG_FIRMWARE_INCLUDE_SFTP=n" >> configs/templates/$TNAME.config         #删除SFTP
